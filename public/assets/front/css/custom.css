@@ -1,0 +1,177 @@
+/* review show on category_detail */
+.score {
+    display: block;
+    max-width: 131px;
+    min-width: 131px;
+    font-size: 26px;
+    width: 102%;
+    height: 28px;
+    margin-right: 0px;
+    background: #eee;
+    background: linear-gradient( 90deg, #fc0 var( --_score, 50% ), #eee 0 );
+    -webkit-mask: url( 'data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" ><path fill="%23000" d="M16 2 L20 12 30 12 22 19 25 30 16 23 7 30 10 19 2 12 12 12 Z"/></svg>' ) 0 0/1em 1em;
+    mask: url( 'data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" ><path fill="%23000" d="M16 2 L20 12 30 12 22 19 25 30 16 23 7 30 10 19 2 12 12 12 Z"/></svg>' ) 0 0/1em 1em;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.write_review_btn {
+    height: 40px;
+}
+/* write review form */
+.star-rating {
+    font-size: 0;
+    white-space: nowrap;
+    display: inline-block;
+    width: 125px; /* Adjusted size */
+    height: 25px;  /* Adjusted size */
+    overflow: hidden;
+    position: relative;
+    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"><path fill="%23ddd" d="M16 2 L20 12 30 12 22 19 25 30 16 23 7 30 10 19 2 12 12 12 Z"/></svg>') 0 0/1em 1em;
+    background-size: contain;
+}
+.star-rating i {
+    opacity: 0;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 20%;
+    z-index: 1;
+    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"><path fill="%23FFD700" d="M16 2 L20 12 30 12 22 19 25 30 16 23 7 30 10 19 2 12 12 12 Z"/></svg>') 0 0/1em 1em;
+    background-size: contain;
+}
+.star-rating input {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    opacity: 0;
+    display: inline-block;
+    width: 20%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    z-index: 2;
+    position: relative;
+}
+.star-rating input:hover + i,
+.star-rating input:checked + i {
+    opacity: 1;
+}
+.star-rating i ~ i { width: 40%; }
+.star-rating i ~ i ~ i { width: 60%; }
+.star-rating i ~ i ~ i ~ i { width: 80%; }
+.star-rating i ~ i ~ i ~ i ~ i { width: 100%; }
+/* for fav btn in header */
+.fav_btn{
+    width: 50px;
+    min-width: 50px;
+}
+/* card box fav btn */
+.card_box_img {
+    position: relative;
+    overflow: hidden;
+}
+
+.card_box_img i {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    color: rgb(197, 192, 192);
+    cursor: pointer;
+    z-index: 10;
+}
+
+.card_box_img i.active {
+    color: red;
+}
+
+.cur_select {
+    max-width: 79px;
+    background-color: #f6f6f6;
+    border: 0px;
+    font-size: 11px;
+    color: #707070;
+    text-overflow: ellipsis;
+    width: 100%;
+    text-wrap: nowrap;
+    height: 100%;
+}
+/* for laptop side supprt list closequery and active button manage */
+.support_content > h4
+{
+  width: auto;
+}
+
+/* pagination */
+.notNeper{
+	padding: 15px 0;
+}
+.notNeper ul{
+	justify-content: end;
+    align-items: center;
+}
+.notNeper ul li:first-child{
+		background: #EAECF0;
+		color: #fff;
+		margin: 0 15px;
+		height: 30px;
+		width: 30px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		border-radius: 50%;
+		-webkit-border-radius: 50%;
+		-moz-border-radius: 50%;
+		-ms-border-radius: 50%;
+		-o-border-radius: 50%;
+}
+.notNeper ul li.active span{
+	background: var(--liner-color);
+    height: 30px;
+    width: 30px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+		border-radius: 50%;
+		-webkit-border-radius: 50%;
+		-moz-border-radius: 50%;
+		-ms-border-radius: 50%;
+		-o-border-radius: 50%;
+}
+.notNeper ul li a{
+	font-size: 14px;
+	font-weight: 400;
+	background: none;
+	border: none;
+	padding: 15px;
+	height: unset;
+	color: #4F49E8;
+
+}
+.notNeper ul li:last-child{
+	background: #c16dfb;
+	margin: 0 15px;
+	height: 30px;
+	width: 30px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 50%;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-ms-border-radius: 50%;
+	-o-border-radius: 50%;
+}
+.notNeper ul li:last-child a{
+	color: #fff;
+}
+.notNeper nav div:first-child{
+	display: flex;
+	align-items: center;
+	justify-content: end;
+}
+.notNeper nav span,.notNeper nav a{
+	display: block;
+}
+/* pagination */
