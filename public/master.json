@@ -1,0 +1,11 @@
+{
+	"URL": "https://healing-hospital.com/api/",
+	"clientKey": "rzp_test_ykljzJgL3uICrP",
+	"secretKey": "1Dk44OAjVCtSj7vA6A3qKSK1",
+	"new_version":"1.1.25",
+	"ios_new_version":"1.1.24",
+	"app_update_msg":"New App Version Available",
+	"is_update_on":"0",
+	"is_show_update_android":"1",
+	"is_show_update_ios":"1"
+}

@@ -1,0 +1,6 @@
+.hidden{
+    display: none;
+}
+.cardBox .card.gradiant_box1 {
+    background-image: linear-gradient(to right, #8360c3, #2ebf91);
+}
